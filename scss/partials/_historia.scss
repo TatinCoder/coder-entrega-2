@@ -1,0 +1,280 @@
+.ganadores{
+    background-color: #f1ecdf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0px;
+
+    .titulo-ganadores {
+        font-size: 4vh;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+}
+
+.galeria-ganadores {
+    width: 800px;
+    height: 80%;
+    img {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .galeria-ganadores {
+        width: 800px;
+        height: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    .galeria-ganadores {
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria-ganadores {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .ganadores {
+        .titulo-ganadores {
+            font-size: 2vh;
+        }
+    }
+    .galeria-ganadores {
+        width: 300px;
+    }
+}
+
+@media (max-width: 300px) {
+    .galeria-ganadores {
+        width: 200px;
+    }
+}
+
+// Maximos Ganadores
+
+.max-win {
+    background-color: #d4c9ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0px;
+
+    .max-win-img {
+        width: 300px;
+        text-align: center;
+
+        h2{
+            font-size: 3.5vh;
+            font-weight: bold;
+        }
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+
+    .min-win-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .min-win-tlt {
+            margin-bottom: 10px;
+
+            h2 {
+                font-size: 3.5vh;
+                font-weight: bold;
+            }
+        }
+
+        .min-win-conts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+
+            div {
+                width: 120px;
+
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+
+                h3 {
+                    margin-top: 5px;
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
+
+// Media querys
+
+@media (max-width: 1024px) {
+    .max-win-img {
+       width: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    .max-win {
+        flex-direction: column;
+        .max-win-img {
+           width: 500px;
+        }
+
+        .min-win-img {
+            .min-win-conts {
+                div {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .max-win {
+        flex-direction: column;
+        .max-win-img {
+           width: 300px;
+        }
+
+        .min-win-img {
+            .min-win-conts {
+                div {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .max-win {
+        flex-direction: column;
+        .max-win-img {
+           width: 200px;
+
+           h2{
+            font-size: 2vh;
+           }
+        }
+
+        .min-win-img {
+            .min-win-tlt {
+                h2{
+                    font-size: 2vh;
+                }    
+            }
+            .min-win-conts {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 10px;
+    
+                div {
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 300px) {
+    .max-win {
+        flex-direction: column;
+        .max-win-img {
+           width: 150px;
+        }
+
+        .min-win-img {
+            .min-win-conts {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 5px;
+    
+                div {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+// Sucesos Historicos
+
+.suc-hist {
+    background-color: #c7ba99;
+    padding: 50px;
+    text-align: center;
+
+    h2 {
+        font-size: 4vh;
+        font-weight: bold;
+    }
+    .suc-cont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .cont-tlt{
+            scale: 0.9;
+            div {
+                img{
+                    width: 100%;
+                    border-radius: 15px;
+                }
+    
+                h2{
+                    margin-top: 10px;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+// A partir de esta medida se cambia a 2x2
+@media (max-width: 1024px) {
+    .suc-hist {
+        .suc-cont{
+            .cont-tlt {
+                scale: 1.0;
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    .suc-hist{
+        .suc-cont {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .suc-hist {
+        h2 {
+            font-size: 2vh;
+        }
+    }
+}
