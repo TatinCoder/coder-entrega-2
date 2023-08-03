@@ -22,42 +22,6 @@
     }
 }
 
-@media (max-width: 1024px) {
-    .galeria-ganadores {
-        width: 800px;
-        height: 80%;
-    }
-}
-
-@media (max-width: 800px) {
-    .galeria-ganadores {
-        width: 600px;
-    }
-}
-
-@media (max-width: 600px) {
-    .galeria-ganadores {
-        width: 400px;
-    }
-}
-
-@media (max-width: 400px) {
-    .ganadores {
-        .titulo-ganadores {
-            font-size: 2vh;
-        }
-    }
-    .galeria-ganadores {
-        width: 300px;
-    }
-}
-
-@media (max-width: 300px) {
-    .galeria-ganadores {
-        width: 200px;
-    }
-}
-
 // Maximos Ganadores
 
 .max-win {
@@ -121,100 +85,6 @@
     }
 }
 
-// Media querys
-
-@media (max-width: 1024px) {
-    .max-win-img {
-       width: 300px;
-    }
-}
-
-@media (max-width: 800px) {
-    .max-win {
-        flex-direction: column;
-        .max-win-img {
-           width: 500px;
-        }
-
-        .min-win-img {
-            .min-win-conts {
-                div {
-                    width: 150px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 600px) {
-    .max-win {
-        flex-direction: column;
-        .max-win-img {
-           width: 300px;
-        }
-
-        .min-win-img {
-            .min-win-conts {
-                div {
-                    width: 100px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 400px) {
-    .max-win {
-        flex-direction: column;
-        .max-win-img {
-           width: 200px;
-
-           h2{
-            font-size: 2vh;
-           }
-        }
-
-        .min-win-img {
-            .min-win-tlt {
-                h2{
-                    font-size: 2vh;
-                }    
-            }
-            .min-win-conts {
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                gap: 10px;
-    
-                div {
-                    width: 100px;
-                }
-            }
-        }
-    }
-
-}
-
-@media (max-width: 300px) {
-    .max-win {
-        flex-direction: column;
-        .max-win-img {
-           width: 150px;
-        }
-
-        .min-win-img {
-            .min-win-conts {
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                gap: 5px;
-    
-                div {
-                    width: 100px;
-                }
-            }
-        }
-    }
-}
-
 // Sucesos Historicos
 
 .suc-hist {
@@ -248,33 +118,6 @@
                     position: relative;
                 }
             }
-        }
-    }
-}
-
-// A partir de esta medida se cambia a 2x2
-@media (max-width: 1024px) {
-    .suc-hist {
-        .suc-cont{
-            .cont-tlt {
-                scale: 1.0;
-            }
-        }
-    }
-}
-@media (max-width: 800px) {
-    .suc-hist{
-        .suc-cont {
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-        }
-    }
-}
-
-@media (max-width: 400px) {
-    .suc-hist {
-        h2 {
-            font-size: 2vh;
         }
     }
 }
