@@ -599,3 +599,50 @@
         }
     }
 }
+
+
+
+
+// CONTACTO 
+
+@media (max-width: 600px) {
+    .form-contacto {
+        .formulario {
+            h1 {
+                text-align: center;
+                width: 400px;
+            }
+            .cont-form {
+                width: 400px;
+            }
+            div {
+                textarea {
+                    width: 340px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .form-contacto {
+        .formulario {
+            h1 {
+                text-align: center;
+                width: 200px;
+                font-size: 3vh;
+            }
+            .cont-form {
+                width: 200px;
+                div {
+                    input {
+                        width: 140px;
+                    }
+                    textarea {
+                        width: 140px;
+                    }
+                }
+            }
+        }
+    }
+}
