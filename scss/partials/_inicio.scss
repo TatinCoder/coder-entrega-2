@@ -91,18 +91,21 @@
     border-radius: 20px;
     box-shadow: 5px 5px 5px 2px rgba(29, 29, 29, 0.534);
 
-    .titulo-lc {
-        h2 {
-            background-color: rgba(32, 32, 32, 0.747);
-            color: azure;
-            position: absolute;
-            text-align: center;
-            width: 100%;
-            left: 0px;
-            bottom: 0px;
-            padding-bottom: 10px;
-            font-size: 2rem;
-            font-weight: 400;
+    .ultimo-img{
+        .titulo-lc {
+            a {
+                h2 {
+                    background-color: rgba(32, 32, 32, 0.747);
+                    color: azure;
+                    position: absolute;
+                    text-align: center;
+                    width: 100%;
+                    left: 0px;
+                    bottom: 0px;
+                    font-size: 2rem;
+                    font-weight: 400;
+                }
+            }
         }
     }
 }
