@@ -68,7 +68,9 @@
         div {       
             img {
                 width: 200px;
+                height: 200px;
                 border-radius: 40px;
+                object-fit: cover;
             }
             h2 {
                 padding-top: 20px;
@@ -92,10 +94,15 @@
         div{
             img{
                 width: 300px;
+                height: 250px;
+                object-fit: cover;
                 border-radius: 15px;
+                box-shadow: 5px 5px 5px 2px rgba(29, 29, 29, 0.534);
             }
             h2{
                 font-size: 3vh;
+                margin-top: 10px;
+                margin-bottom: 30px;
                 width: 300px;
             }
         }

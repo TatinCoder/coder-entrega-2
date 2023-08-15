@@ -7,7 +7,7 @@
 /* IMPORT DE FONT */
 @font-face {
   font-family: "Alata";
-  src: url(../../css/Alata.ttf);
+  src: url(../css/Alata.ttf);
 }
 /* CSS BODY, HEADER */
 body {
@@ -293,7 +293,7 @@ nav a:hover {
   gap: 100px;
   padding-top: 10px;
   /* Fondo de pantalla del primer scroll */
-  background-image: url(../../img/fondo-index.jpg);
+  background-image: url(../img/fondo-index.jpg);
   background-size: cover;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -374,7 +374,7 @@ nav a:hover {
   border-radius: 20px;
   box-shadow: 5px 5px 5px 2px rgba(29, 29, 29, 0.534);
 }
-.ultimo-campeon .titulo-lc h2 {
+.ultimo-campeon .ultimo-img .titulo-lc a h2 {
   background-color: rgba(32, 32, 32, 0.747);
   color: azure;
   position: absolute;
@@ -382,7 +382,7 @@ nav a:hover {
   width: 100%;
   left: 0px;
   bottom: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   font-size: 2rem;
   font-weight: 400;
 }
@@ -586,35 +586,6 @@ nav a:hover {
   border-radius: 20px;
 }
 
-@media (max-width: 1024px) {
-  .galeria-ganadores {
-    width: 800px;
-    height: 80%;
-  }
-}
-@media (max-width: 800px) {
-  .galeria-ganadores {
-    width: 600px;
-  }
-}
-@media (max-width: 600px) {
-  .galeria-ganadores {
-    width: 400px;
-  }
-}
-@media (max-width: 400px) {
-  .ganadores .titulo-ganadores {
-    font-size: 2vh;
-  }
-  .galeria-ganadores {
-    width: 300px;
-  }
-}
-@media (max-width: 300px) {
-  .galeria-ganadores {
-    width: 200px;
-  }
-}
 .max-win {
   background-color: #d4c9ad;
   display: flex;
@@ -667,6 +638,207 @@ nav a:hover {
   font-size: small;
 }
 
+.suc-hist {
+  background-color: #c7ba99;
+  padding: 50px;
+  text-align: center;
+}
+.suc-hist h2 {
+  font-size: 4vh;
+  font-weight: bold;
+}
+.suc-hist .suc-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.suc-hist .suc-cont .cont-tlt {
+  scale: 0.9;
+}
+.suc-hist .suc-cont .cont-tlt div img {
+  width: 100%;
+  border-radius: 15px;
+}
+.suc-hist .suc-cont .cont-tlt div h2 {
+  margin-top: 10px;
+  position: relative;
+}
+
+.videos-int {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px 0px;
+}
+.videos-int .vid-gam h1 {
+  font-size: 4vh;
+  font-weight: bold;
+}
+.videos-int .vid-gam iframe {
+  width: 500px;
+}
+.videos-int .vid-gam-2 h2 {
+  font-size: 4vh;
+  font-weight: bold;
+}
+.videos-int .vid-gam-2 iframe {
+  width: 500px;
+}
+
+.best-players {
+  background-color: #68b2f8;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.best-players .best-tlt {
+  padding-bottom: 30px;
+}
+.best-players .best-tlt h2 {
+  font-size: 4vh;
+  font-weight: bold;
+}
+.best-players .player-cont {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: ". p1 p2 p3 .";
+  gap: 20px;
+}
+.best-players .player-cont .p1 {
+  grid-area: p1;
+}
+.best-players .player-cont .p2 {
+  grid-area: p2;
+  padding-bottom: 50px;
+}
+.best-players .player-cont .p3 {
+  grid-area: p3;
+}
+.best-players .player-cont div img {
+  width: 200px;
+  border-radius: 40px;
+}
+.best-players .player-cont div h2 {
+  padding-top: 20px;
+  font-size: 2vh;
+}
+
+.others-gaming {
+  background-color: #506ee5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding: 40px;
+}
+.others-gaming .oth-vids div img {
+  width: 300px;
+  border-radius: 15px;
+}
+.others-gaming .oth-vids div h2 {
+  font-size: 3vh;
+  width: 300px;
+}
+.others-gaming .oth-sorteo h2 {
+  font-size: 4vh;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.others-gaming .oth-sorteo iframe {
+  width: 600px;
+  height: 400px;
+}
+
+.form-contacto {
+  /* Fondo de pantalla del primer scroll */
+  background-image: url(../../img/contact-bkg.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  padding: 50px 0px;
+}
+.form-contacto .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.form-contacto .formulario h1 {
+  font-size: 4vh;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.form-contacto .formulario .cont-form {
+  background-color: #232323;
+  padding: 30px;
+  border-radius: 20px;
+}
+.form-contacto .formulario .cont-form div h2 {
+  color: white;
+  font-size: 3vh;
+  font-weight: bold;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+.form-contacto .formulario .cont-form div input {
+  height: 50px;
+  width: 300px;
+  border-radius: 15px;
+  text-align: center;
+}
+.form-contacto .formulario .cont-form div select {
+  height: 50px;
+  width: 80px;
+  border-radius: 15px;
+  text-align: center;
+}
+.form-contacto .formulario .cont-form div textarea {
+  border-radius: 15px;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .galeria-ganadores {
+    width: 800px;
+    height: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .galeria-ganadores {
+    width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .galeria-ganadores {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .ganadores .titulo-ganadores {
+    font-size: 2vh;
+  }
+  .galeria-ganadores {
+    width: 300px;
+  }
+}
+@media (max-width: 300px) {
+  .galeria-ganadores {
+    width: 200px;
+  }
+}
 @media (max-width: 1024px) {
   .max-win-img {
     width: 300px;
@@ -732,36 +904,6 @@ nav a:hover {
     width: 100px;
   }
 }
-.suc-hist {
-  background-color: #c7ba99;
-  padding: 50px;
-  text-align: center;
-}
-.suc-hist h2 {
-  font-size: 4vh;
-  font-weight: bold;
-}
-.suc-hist .suc-cont {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.suc-hist .suc-cont .cont-tlt {
-  scale: 0.9;
-}
-.suc-hist .suc-cont .cont-tlt div img {
-  width: 100%;
-  border-radius: 15px;
-}
-.suc-hist .suc-cont .cont-tlt div h2 {
-  margin-top: 10px;
-  position: relative;
-}
-
 @media (max-width: 1024px) {
   .suc-hist .suc-cont .cont-tlt {
     scale: 1;
@@ -778,29 +920,6 @@ nav a:hover {
     font-size: 2vh;
   }
 }
-.videos-int {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-  padding: 20px 0px;
-}
-.videos-int .vid-gam h1 {
-  font-size: 4vh;
-  font-weight: bold;
-}
-.videos-int .vid-gam iframe {
-  width: 500px;
-}
-.videos-int .vid-gam-2 h2 {
-  font-size: 4vh;
-  font-weight: bold;
-}
-.videos-int .vid-gam-2 iframe {
-  width: 500px;
-}
-
 @media (max-width: 1024px) {
   .videos-int {
     flex-direction: column;
@@ -850,49 +969,6 @@ nav a:hover {
     height: 100px;
   }
 }
-.best-players {
-  background-color: #68b2f8;
-  padding: 40px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-.best-players .best-tlt {
-  padding-bottom: 30px;
-}
-.best-players .best-tlt h2 {
-  font-size: 4vh;
-  font-weight: bold;
-}
-.best-players .player-cont {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-areas: ". p1 p2 p3 .";
-  gap: 20px;
-}
-.best-players .player-cont .p1 {
-  grid-area: p1;
-}
-.best-players .player-cont .p2 {
-  grid-area: p2;
-  padding-bottom: 50px;
-}
-.best-players .player-cont .p3 {
-  grid-area: p3;
-}
-.best-players .player-cont div img {
-  width: 200px;
-  border-radius: 40px;
-}
-.best-players .player-cont div h2 {
-  padding-top: 20px;
-  font-size: 2vh;
-}
-
 @media (max-width: 800px) {
   .best-players .best-tlt h2 {
     font-size: 2.5vh;
@@ -932,33 +1008,6 @@ nav a:hover {
     grid-area: p3;
   }
 }
-.others-gaming {
-  background-color: #506ee5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 30px;
-  padding: 40px;
-}
-.others-gaming .oth-vids div img {
-  width: 300px;
-  border-radius: 15px;
-}
-.others-gaming .oth-vids div h2 {
-  font-size: 3vh;
-  width: 300px;
-}
-.others-gaming .oth-sorteo h2 {
-  font-size: 4vh;
-  font-weight: bold;
-  padding-bottom: 15px;
-}
-.others-gaming .oth-sorteo iframe {
-  width: 600px;
-  height: 400px;
-}
-
 @media (max-width: 1024px) {
   .others-gaming {
     flex-direction: column;
@@ -1001,52 +1050,4 @@ nav a:hover {
   .others-gaming .oth-sorteo iframe {
     width: 200px;
   }
-}
-.form-contacto {
-  /* Fondo de pantalla del primer scroll */
-  background-image: url(../../img/contact-bkg.jpg);
-  background-size: cover;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  padding: 50px 0px;
-}
-.form-contacto .formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-}
-.form-contacto .formulario h1 {
-  font-size: 4vh;
-  font-weight: bold;
-  padding-bottom: 15px;
-}
-.form-contacto .formulario .cont-form {
-  background-color: #232323;
-  padding: 30px;
-  border-radius: 20px;
-}
-.form-contacto .formulario .cont-form div h2 {
-  color: white;
-  font-size: 3vh;
-  font-weight: bold;
-  padding-bottom: 15px;
-  padding-top: 20px;
-}
-.form-contacto .formulario .cont-form div input {
-  height: 50px;
-  width: 300px;
-  border-radius: 15px;
-  text-align: center;
-}
-.form-contacto .formulario .cont-form div select {
-  height: 50px;
-  width: 80px;
-  border-radius: 15px;
-  text-align: center;
-}
-.form-contacto .formulario .cont-form div textarea {
-  border-radius: 15px;
-  text-align: left;
 }/*# sourceMappingURL=style.css.map */

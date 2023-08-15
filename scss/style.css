@@ -7,7 +7,7 @@
 /* IMPORT DE FONT */
 @font-face {
   font-family: "Alata";
-  src: url(../../css/Alata.ttf);
+  src: url(../css/Alata.ttf);
 }
 /* CSS BODY, HEADER */
 body {
@@ -293,7 +293,7 @@ nav a:hover {
   gap: 100px;
   padding-top: 10px;
   /* Fondo de pantalla del primer scroll */
-  background-image: url(../../img/fondo-index.jpg);
+  background-image: url(../img/fondo-index.jpg);
   background-size: cover;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -381,7 +381,8 @@ nav a:hover {
   text-align: center;
   width: 100%;
   left: 0px;
-  bottom: 0px;
+  bottom: -10px;
+  padding-bottom: 20px;
   font-size: 2rem;
   font-weight: 400;
 }
@@ -550,6 +551,9 @@ nav a:hover {
 .opiniones .participantes-op .carousel-item {
   padding: 30px 50px;
 }
+.opiniones .participantes-op .carousel-item .parrafo-op {
+  font-style: italic;
+}
 .opiniones .participantes-op .carousel-item .nombre-op {
   padding: 5px;
   font-size: 0.75rem;
@@ -603,6 +607,7 @@ nav a:hover {
 }
 .max-win .max-win-img img {
   width: 100%;
+  height: 100%;
   border-radius: 20px;
 }
 .max-win .min-win-img {
@@ -627,10 +632,13 @@ nav a:hover {
 }
 .max-win .min-win-img .min-win-conts div {
   width: 120px;
+  height: 130px;
+  margin-bottom: 20px;
 }
 .max-win .min-win-img .min-win-conts div img {
   width: 100%;
   border-radius: 20px;
+  height: 100%;
 }
 .max-win .min-win-img .min-win-conts div h3 {
   margin-top: 5px;
@@ -654,13 +662,20 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 .suc-hist .suc-cont .cont-tlt {
   scale: 0.9;
 }
 .suc-hist .suc-cont .cont-tlt div img {
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   border-radius: 15px;
+  box-shadow: 5px 5px 5px 2px rgba(29, 29, 29, 0.534);
 }
 .suc-hist .suc-cont .cont-tlt div h2 {
   margin-top: 10px;
@@ -726,7 +741,10 @@ nav a:hover {
 }
 .best-players .player-cont div img {
   width: 200px;
+  height: 200px;
   border-radius: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .best-players .player-cont div h2 {
   padding-top: 20px;
@@ -744,10 +762,16 @@ nav a:hover {
 }
 .others-gaming .oth-vids div img {
   width: 300px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
+  box-shadow: 5px 5px 5px 2px rgba(29, 29, 29, 0.534);
 }
 .others-gaming .oth-vids div h2 {
   font-size: 3vh;
+  margin-top: 10px;
+  margin-bottom: 30px;
   width: 300px;
 }
 .others-gaming .oth-sorteo h2 {

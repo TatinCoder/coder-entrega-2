@@ -6,7 +6,7 @@
     padding-top: 10px;
 
     /* Fondo de pantalla del primer scroll */
-    background-image: url(../../img/fondo-index.jpg);
+    background-image: url(../img/fondo-index.jpg);
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -101,7 +101,8 @@
                     text-align: center;
                     width: 100%;
                     left: 0px;
-                    bottom: 0px;
+                    bottom: -10px;
+                    padding-bottom: 20px;
                     font-size: 2rem;
                     font-weight: 400;
                 }
