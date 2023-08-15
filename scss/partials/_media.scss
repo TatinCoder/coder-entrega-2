@@ -1,8 +1,146 @@
+// INICIO 
+
+@media (max-width: 1300px) {
+    .introduccion {
+        flex-direction: column;
+        .noticias {
+            margin-top: 100px;
+           scale: 1.2;
+        }
+    }
+}
+
+
+@media (max-width: 800px){
+    .introduccion {
+        .ultimo-campeon {
+            width: 600px;
+            height: 500px;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .introduccion {
+        .ultimo-campeon {
+            width: 400px;
+            height: 500px;
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .introduccion {
+        .noticias {
+            width: 170px;
+            .imagenes {
+                width: 130px;
+            }
+        }
+        .ultimo-campeon {
+            width: 200px;
+            height: 600px;
+        }
+    }
+}
+
+// UBICACION
+
+@media(max-width: 1300px) {
+    .ubicacion {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px) {
+    .ubicacion {
+        .mapa {
+            .gmaps {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1300px) {
+    .ubicacion {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px) {
+    .ubicacion {
+        .mapa {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .gmaps {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .ubicacion {
+        .mapa {
+            .gmaps {
+                width: 200px;
+            }
+        }
+        .mapa-texto {
+            width: 200px;
+        }
+    }
+}
+
+// VIDEOS
+
+@media(max-width: 1300px) {
+    .videos {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px) {
+    .videos {
+        .video-mun {
+            .video {
+                width: 400px;
+            }
+        }
+        .sorteo-chp {
+            .video {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .videos {
+        .video-mun {
+            .video {
+                width: 200px;
+            }
+        }
+        .sorteo-chp {
+            .video {
+                width: 200px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
 // NOSOTROS 
 
 @media (max-width: 1500px) {
     .nosotros {
-        
         justify-items: center;
         align-items: center;
         grid-template-columns: repeat(1, 1fr);
@@ -14,6 +152,7 @@
     }
     
 }
+
 
 @media (max-width: 800px) {
     .nosotros {
@@ -65,6 +204,7 @@
 
 // OPINIONES 
 
+// No pongo mas media porque no hacen falta
 @media (max-width: 600px) {
     .opiniones {
         .participantes-op {
