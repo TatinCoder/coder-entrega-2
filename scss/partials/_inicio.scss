@@ -150,7 +150,13 @@
 .mapa-texto {
     text-align: center;
     width: 400px;
+    transition: 0.7s;
 }
+
+.mapa-texto:hover {
+    transform: scale(1.08);
+}
+  
 
 .mapa-parrafo {
     padding-top: 10px;
@@ -177,6 +183,12 @@
             height: 315px;
             border-radius: 15px;
         }
+        .video:hover {
+            animation-name: Videos-Fotos;
+            animation-duration: 6s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
     }
 
     .sorteo-chp {
@@ -187,6 +199,13 @@
             width: 560px;
             height: 315px;
             border-radius: 15px;
+            transition: 0.7s;
+        }
+        .video:hover {
+            animation-name: Videos-Fotos;
+            animation-duration: 6s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
         }
     }
 }

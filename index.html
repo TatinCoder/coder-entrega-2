@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foressi League</title>
 
+    <!-- Scroll Anim -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Links CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./scss/style.css">
@@ -73,22 +76,22 @@
         </section>
         <!-- Seccion de Ubicacion -->
         <section class="ubicacion">
-            <div class="mapa">
+            <div class="mapa" data-aos="fade-right">
                 <h2 class="titulo-mapa">Sede Oficial de la Gloria Eterna</h2>
                 <iframe class="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.940911930243!2d-58.44053302341013!3d-34.63093345893748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca4a577402a1%3A0x99f1b06d71b7dbeb!2sF%C3%BAtbol%205%20Centenera!5e0!3m2!1ses!2sar!4v1688662775134!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="mapa-texto">
+            <div class="mapa-texto" data-aos="fade-left">
                 <h2>¿Por que la sede de la copa mas importante es Centenera Futbol 5?</h2>
                 <p class="mapa-parrafo">Desde siempre jugamos partidos en centenera, por la localidad, por el precio y demas. Aparte de porque la cancha es bastante buena y grande, ya tiene un valor sentimental. Hace casi 5 años que venimos jugando partidos en ese lugar, tanto de torneo, como de partido amistoso, etc. Si lo imaginaramos como un lugar diriamos que es un templo, no se puede hablar mal del lugar y siempre que jugamos en ese lugar, los muchachos se iluminan, sacan el leo messi que tienen en el interior. ¿Patean de mitad de cancha? Gol, ¿Meten un caño? Pasa, ¿Pase 3 dedos a lo Modric? Cae en el pie del compañero. Es simplemente la MISTICA del lugar.</p>
             </div>
         </section>
         <!-- Seccion videos -->
         <section class="videos">
-            <div class="video-mun">
+            <div class="video-mun" data-aos="zoom-in">
                 <h2 class="video-titulo-1">Asi se vivio la final del mundialito</h2>
                 <iframe class="video" src="https://www.youtube.com/embed/c1Qybf-X5Js?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div class="sorteo-chp">
+            <div class="sorteo-chp" data-aos="zoom-in">
                 <h2 class="video-titulo-2">Tension en el sorteo de champions</h2>
                 <iframe class="video" src="https://www.youtube.com/embed/ZEbphOngC2o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
@@ -99,7 +102,7 @@
         <!-- Barra de Sponsors -->
         <div class="sponsors">
             <p class="sponsors-titulo">SPONSORS OFICIALES</p>
-            <div class="sponsors-logos">
+            <div class="sponsors-logos" data-aos="flip-up">
                 <div><a href="https://www.coca-cola.com.ar/"><img src="./img/spo1.jpg" alt="Logo de Coca Cola"></a></div>
                 <div><a href="https://www.adidas.com.ar/?=null&=null&-_-ds_agid=58700004850253847&-_-ds_kid=43700041731365975-_-&af_channel=Search&af_reengagement_window=30d&c=Trademark-adidas-General-B-Exact&cm_mmc=AdieSEM_Google-_-Trademark-adidas-General-B-Exact-_-Trademark-adidas-X-General-_-adidas-_--_-dv%3AeCom-_-cm_mmca1%3DAR-_-cm_mmc2%3D&gclid=CjwKCAjwzJmlBhBBEiwAEJyLu7J889Bp-KxTcIarxf51o6CpUTbQrQ8ODbYs3X4ITqgiC6I95xxDehoCdegQAvD_BwE&gclsrc=aw.ds&is_retargeting=true&pid=googleadwords_temp"><img src="./img/spo2.jpg" alt="Logo de Adidas"></a></div>
                 <div><a href="https://www.nike.com.ar/?gclid=CjwKCAjwzJmlBhBBEiwAEJyLu5aYx80Qe1F3Tuapl6HFbnc-pGCC4FkVsKF0RH9oUqI6zzA8ti1gMhoC1EEQAvD_BwE"><img src="./img/spo4.jpg" alt="Logo de Nike"></a></div>
@@ -124,5 +127,9 @@
 
     <!-- El script debe ponerse siempre al final en el body, justo antes de que cierre -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
