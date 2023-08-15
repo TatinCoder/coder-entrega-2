@@ -1,3 +1,89 @@
+// NOSOTROS 
+
+@media (max-width: 1500px) {
+    .nosotros {
+        
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "inicios"
+        "pregunta-1"
+        "pregunta-2";
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .nosotros {
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "inicios"
+        "pregunta-1"
+        "pregunta-2";
+    }
+
+    .inicios {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nosotros {
+       .pregunta-1 {
+        width: 400px;
+       }
+       .pregunta-2 {
+        width: 400px;
+       }
+    }
+    .inicios {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .nosotros {
+       .pregunta-1 {
+        width: 200px;
+       }
+       .pregunta-2 {
+        width: 200px;
+       }
+    }
+    .inicios {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+// OPINIONES 
+
+@media (max-width: 600px) {
+    .opiniones {
+        .participantes-op {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .opiniones {
+        .participantes-op {
+            width: 200px;
+        }
+    }
+}
+
+
+
+
 // HISTORIA 
 
 // GALERIA 

@@ -500,9 +500,11 @@ nav a:hover {
   height: 500px;
 }
 .inicios img {
-  width: 700px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .inicios:hover .titulo-inicios {
   height: 100%;
@@ -541,6 +543,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 30px 0px;
 }
 .opiniones .participantes-op {
@@ -833,6 +836,62 @@ nav a:hover {
   text-align: left;
 }
 
+@media (max-width: 1500px) {
+  .nosotros {
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row: 1fr 1fr 1fr;
+    grid-template-areas: "inicios" "pregunta-1" "pregunta-2";
+  }
+}
+@media (max-width: 800px) {
+  .nosotros {
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row: 1fr 1fr 1fr;
+    grid-template-areas: "inicios" "pregunta-1" "pregunta-2";
+  }
+  .inicios {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .nosotros .pregunta-1 {
+    width: 400px;
+  }
+  .nosotros .pregunta-2 {
+    width: 400px;
+  }
+  .inicios {
+    width: 400px;
+    height: 200px;
+  }
+}
+@media (max-width: 400px) {
+  .nosotros .pregunta-1 {
+    width: 200px;
+  }
+  .nosotros .pregunta-2 {
+    width: 200px;
+  }
+  .inicios {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 600px) {
+  .opiniones .participantes-op {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .opiniones .participantes-op {
+    width: 200px;
+  }
+}
 @media (max-width: 1024px) {
   .galeria-ganadores {
     width: 800px;
