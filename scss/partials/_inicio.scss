@@ -189,6 +189,9 @@
             animation-timing-function: ease-in-out;
             animation-iteration-count: infinite;
         }
+        iframe {
+            border-radius: 20px;
+        }
     }
 
     .sorteo-chp {
@@ -206,6 +209,9 @@
             animation-duration: 6s;
             animation-timing-function: ease-in-out;
             animation-iteration-count: infinite;
+        }
+        iframe {
+            border-radius: 20px;
         }
     }
 }

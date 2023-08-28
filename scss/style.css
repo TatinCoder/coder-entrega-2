@@ -538,6 +538,9 @@ nav a:hover {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
+.videos .video-mun iframe {
+  border-radius: 20px;
+}
 .videos .sorteo-chp .video-titulo-2 {
   padding-bottom: 20px;
 }
@@ -552,6 +555,9 @@ nav a:hover {
   animation-duration: 6s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+}
+.videos .sorteo-chp iframe {
+  border-radius: 20px;
 }
 
 .nosotros {
