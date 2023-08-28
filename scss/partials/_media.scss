@@ -84,6 +84,9 @@
 @media(max-width: 400px) {
     .ubicacion {
         .mapa {
+            .titulo-mapa {
+                font-size: 2.5vh;
+            }
             .gmaps {
                 width: 200px;
             }
@@ -360,11 +363,30 @@
 
 // SUCESOS HISTORICOS
 
+@media (max-width: 1600px) {
+    .suc-hist {
+        .suc-cont{
+            .cont-tlt {
+                div {
+                    .tlt-suc {
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .suc-hist {
         .suc-cont{
             .cont-tlt {
                 scale: 1.0;
+                div {
+                    .tlt-suc {
+                        height: 70px;
+                    }
+                }
             }
         }
     }
@@ -382,6 +404,22 @@
     .suc-hist {
         h2 {
             font-size: 2vh;
+        }
+        .suc-cont{
+            .cont-tlt {
+                div {
+                    .tlt-suc {
+                        height: 50px;
+                        h2 {
+                            font-size: 3vh;
+                        }
+                        p {
+                            padding: 20px 20px;
+                            font-size: 2vh;
+                        }
+                    }
+                }
+            }
         }
     }
 }

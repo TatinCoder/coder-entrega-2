@@ -792,6 +792,7 @@ nav a:hover {
 }
 .suc-hist .suc-cont .cont-tlt {
   scale: 0.9;
+  transition: 1.5s;
 }
 .suc-hist .suc-cont .cont-tlt div img {
   height: 600px;
@@ -807,11 +808,28 @@ nav a:hover {
   margin-top: 10px;
   position: relative;
 }
+.suc-hist .suc-cont .cont-tlt div .tlt-suc {
+  color: azure;
+  background-color: rgba(31, 31, 31, 0.7450980392);
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  height: 80px;
+  border-radius: 10px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transition: 1.5s;
+}
+.suc-hist .suc-cont .cont-tlt div .tlt-suc p {
+  padding: 20px 60px;
+  font-size: 2.5vh;
+}
+.suc-hist .suc-cont .cont-tlt:hover .tlt-suc {
+  height: 100%;
+}
 .suc-hist .suc-cont .cont-tlt:hover {
-  animation-name: Videos-Fotos;
-  animation-duration: 6s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  transform: scale(1.05);
 }
 
 .videos-int {
@@ -917,6 +935,9 @@ nav a:hover {
   gap: 30px;
   padding: 40px;
 }
+.others-gaming .oth-vids div {
+  transition: 1.7s;
+}
 .others-gaming .oth-vids div img {
   width: 300px;
   height: 250px;
@@ -926,14 +947,18 @@ nav a:hover {
   box-shadow: 5px 5px 5px 2px rgba(29, 29, 29, 0.534);
   transition: 0.6s;
 }
-.others-gaming .oth-vids div img:hover {
-  scale: 1.05;
-}
-.others-gaming .oth-vids div h2 {
+.others-gaming .oth-vids div .oth-tlt h2 {
+  color: azure;
+  background-color: rgba(31, 31, 31, 0.7450980392);
+  text-align: center;
+  border-radius: 20px;
   font-size: 3vh;
   margin-top: 10px;
   margin-bottom: 30px;
   width: 300px;
+}
+.others-gaming .oth-vids div:hover {
+  scale: 1.05;
 }
 .others-gaming .oth-sorteo h2 {
   font-size: 4vh;
@@ -1059,6 +1084,9 @@ nav a:hover {
   }
 }
 @media (max-width: 400px) {
+  .ubicacion .mapa .titulo-mapa {
+    font-size: 2.5vh;
+  }
   .ubicacion .mapa .gmaps {
     width: 200px;
   }
@@ -1237,9 +1265,17 @@ nav a:hover {
     width: 100px;
   }
 }
+@media (max-width: 1600px) {
+  .suc-hist .suc-cont .cont-tlt div .tlt-suc {
+    height: 60px;
+  }
+}
 @media (max-width: 1024px) {
   .suc-hist .suc-cont .cont-tlt {
     scale: 1;
+  }
+  .suc-hist .suc-cont .cont-tlt div .tlt-suc {
+    height: 70px;
   }
 }
 @media (max-width: 800px) {
@@ -1250,6 +1286,16 @@ nav a:hover {
 }
 @media (max-width: 400px) {
   .suc-hist h2 {
+    font-size: 2vh;
+  }
+  .suc-hist .suc-cont .cont-tlt div .tlt-suc {
+    height: 50px;
+  }
+  .suc-hist .suc-cont .cont-tlt div .tlt-suc h2 {
+    font-size: 3vh;
+  }
+  .suc-hist .suc-cont .cont-tlt div .tlt-suc p {
+    padding: 20px 20px;
     font-size: 2vh;
   }
 }
